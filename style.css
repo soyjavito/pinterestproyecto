@@ -1,24 +1,46 @@
 .header {
 
 display: grid;
+/* número de columnas que tendrá el grid por porecentajes*/
 grid-template-columns: 5% 15% 60% 5% 5%;
 margin-bottom: 30px;
 margin-top: 20px;
 margin-left: 20px;
 height: auto;
-align-items: center;
+/* alinea elementos del header sobre eje horizontal */
+align-items: center; 
+/* alinea todo el header sobre eje vertical */
+justify-content: center;
 
 }
 
-.logo{
 
+.palabra-pinterest{
+    display: flex;
     justify-content: center;
+
 }
+
+
+
+.elemento-header{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.elemento-header:hover img{
+
+    transform: scale(1.1);
+    
+    }
+
+
 
 .grid {
 
     display: grid;
-    /* permite que al hacer más chica la pantalla las imágenes se vayan hacia abajo, el 250px es el ancho del grid container */
+    /* permite que al hacer más chica la pantalla las imágenes se vayan hacia abajo, el 220px es el ancho del grid container */
     grid-template-columns: repeat(auto-fill, 220px);    
     margin: 10px;
     
@@ -27,9 +49,7 @@ align-items: center;
 .container {
 
     display: grid;
-    align-content: center bottom;
-
-
+    align-content: center top;
 }
 
 .container img{
@@ -37,11 +57,17 @@ align-items: center;
 border-radius: 20px;
 display: grid;
 margin: 10px;
-justify-content: center;
-align-content: stretch;
+cursor: pointer;
 
 }
 
+
+/* hace que los elementos crezcan al pasar el cursor, debe ser abajo de la clase padre */
+.container:hover img{
+
+transform: scale(1.1);
+
+}
 
 
 .buscador{
@@ -52,8 +78,10 @@ align-content: stretch;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     color: gray;
+    width: 90%;
 
 }
+
 
 h1{
 
