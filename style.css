@@ -50,6 +50,7 @@ justify-content: center;
 
     display: grid;
     align-content: center top;
+    object-fit: fill;
 }
 
 .container img{
@@ -58,6 +59,8 @@ border-radius: 20px;
 display: grid;
 margin: 10px;
 cursor: pointer;
+object-fit: fill;
+
 
 }
 
@@ -89,5 +92,16 @@ h1{
     font-family: pacifico;
     color: rgb(62, 62, 62);
     font-size: 40px;
+
+}
+
+@media(max-width:1000px){
+
+h1{
+
+    display: none;
+
+    /*     visibility: hidden;    otra opción para ocultar elementos y aún muestra el contenedor*/
+}
 
 }
