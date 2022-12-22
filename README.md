@@ -1,0 +1,1 @@
+<img aling="left" alt="SS pinteres" src="https://postimg.cc/zVGwvygQ" />
